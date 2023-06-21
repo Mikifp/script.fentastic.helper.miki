@@ -13,10 +13,10 @@ Listitem = xbmcgui.ListItem
 max_widgets = 10
 
 settings_path = xbmcvfs.translatePath(
-    "special://profile/addon_data/script.fentastic.helper/"
+    "special://profile/addon_data/script.fentastic.helper.miki/"
 )
 database_path = xbmcvfs.translatePath(
-    "special://profile/addon_data/script.fentastic.helper/cpath_cache.db"
+    "special://profile/addon_data/script.fentastic.helper.miki/cpath_cache.db"
 )
 movies_widgets_xml, tvshows_widgets_xml = (
     "script-fentastic-widget_movies",
@@ -41,10 +41,13 @@ main_include_dict = {
     "tvshow": {"main_menu": None, "widget": "TVShowWidgets"},
 }
 widget_types = (
-    ("Poster", "WidgetListPoster"),
-    ("Landscape", "WidgetListLandscape"),
-    ("LandscapeInfo", "WidgetListEpisodes"),
-    ("Category", "WidgetListCategory"),
+    ("Poster", "WidgetListPosterCustom"),
+    ("Landscape", "WidgetListLandscapeCustom"),
+    ("Small Landscape", "WidgetListSmallLandscapeCustom"),
+    ("Poster Landscape", "WidgetListPosterLandscapeCustom"),
+    ("Square", "WidgetListSquareCustom"),
+    ("Episodes", "WidgetListEpisodesCustom"),
+    ("Category", "WidgetListCategoryCustom"),
 )
 default_path = "addons://sources/video"
 
@@ -317,7 +320,7 @@ class CPaths:
                 return widget_type
         return None
 
-    def widget_type(self, label="Choose widget display type", type_limit=4):
+    def widget_type(self, label="Choose widget display type", type_limit=10):
         choice = dialog.select(label, [i[0] for i in widget_types[0:type_limit]])
         if choice == -1:
             return None
