@@ -19,10 +19,10 @@ def routing():
 
         return exec("actions.%s(params)" % mode.split(".")[1])
 
-#    if mode == "check_for_update":
-#        from modules.version_monitor import check_for_update
+    if mode == "check_for_update":
+        from modules.version_monitor import check_for_update
 
-#        return check_for_update(_get("skin_id"))
+        return check_for_update(_get("skin_id"))
 
     if mode == "manage_widgets":
         from modules.cpath_maker import CPaths
