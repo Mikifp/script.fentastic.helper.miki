@@ -13,10 +13,10 @@ Listitem = xbmcgui.ListItem
 max_widgets = 10
 
 settings_path = xbmcvfs.translatePath(
-    "special://profile/addon_data/script.fentastic.helper.miki/"
+    "special://profile/addon_data/script.fentastic.miki.helper/"
 )
 database_path = xbmcvfs.translatePath(
-    "special://profile/addon_data/script.fentastic.helper.miki/cpath_cache.db"
+    "special://profile/addon_data/script.fentastic.miki.helper/cpath_cache.db"
 )
 movies_widgets_xml, tvshows_widgets_xml = (
     "script-fentastic-widget_movies",
