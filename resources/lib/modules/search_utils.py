@@ -9,11 +9,11 @@ from threading import Thread, Event
 # from modules.logger import logger
 
 settings_path = xbmcvfs.translatePath(
-    "special://profile/addon_data/script.fentastic.helper/"
+    "special://profile/addon_data/script.fentastic.miki.helper/"
 )
 
 spath_database_path = xbmcvfs.translatePath(
-    "special://profile/addon_data/script.fentastic.helper/spath_cache.db"
+    "special://profile/addon_data/script.fentastic.miki.helper/spath_cache.db"
 )
 
 search_history_xml = "script-fentastic-search_history"

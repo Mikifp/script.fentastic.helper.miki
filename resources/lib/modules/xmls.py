@@ -20,7 +20,7 @@ media_xml_body = '\
 history_xml_body = "\
 \n        <item>\
 \n            <label>{spath}</label>\
-\n            <onclick>RunScript(script.fentastic.helper,mode=re_search)</onclick>\
+\n            <onclick>RunScript(script.fentastic.miki.helper,mode=re_search)</onclick>\
 \n        </item>"
 
 
@@ -74,7 +74,7 @@ search_history_xml = '\
 \n    <include name="SearchHistory">\
 \n        <item>\
 \n            <label>{spath}</label>\
-\n            <onclick>RunScript(script.fentastic.helper,mode=re_search)</onclick>\
+\n            <onclick>RunScript(script.fentastic.miki.helper,mode=re_search)</onclick>\
 \n        </item>\
 \n    </include>\
 \n</includes>'
